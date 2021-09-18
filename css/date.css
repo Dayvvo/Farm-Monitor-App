@@ -10,6 +10,12 @@
   font-size: 12px;
   height: 100%;
 }
+
+
+.date.filter input{
+  max-width: 110px;
+}
+
 .date .input1 {
   text-align: left !important;
 }
