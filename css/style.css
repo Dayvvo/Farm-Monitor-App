@@ -39,8 +39,8 @@ input[type=text] {
   src: url("../webfont/Euclid Circular A SemiBold.woff");
 }
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   font-family: Light;
 }
 
@@ -199,9 +199,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1.5px solid transparent;
   font-size: 13px;
 }
-.mappas a:hover {
+.mappas a:hover,.mappas a.active {
   border-bottom: 1.5px solid var(--faint);
 }
+
+
 @media (min-width: 400px) {
   .mappas a {
     font-size: 14px;
