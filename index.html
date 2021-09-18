@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro</title>
+    <title>UTS Farm Mapper</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/date.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
 </head>
 <body>
 
@@ -23,7 +27,7 @@
                                 <div class='flexAl'>
                                     <img  width="20" height="20" src='./images/logo.svg' />
                                 </div>
-                                <div class='wyt logo flexAl smallLM'>Farm Wrapper</div>
+                                <div class='wyt logo flexAl smallLM'>Farm Mapper</div>
                             </div>
                             
 
@@ -151,10 +155,17 @@
                         </div>
                         
                         <div class="flexAl">
-                            <div class="boxx datebox">
-                                Jan 26- Jan 28 2021
-                            </div>
+                            <div class="date">
+
+                                <div class=" ">
+                                    <div class="input-group input-daterange"> 
+                                        <input type="text" style="color:initial !important"  class="form-control input1" placeholder="Start Date" readonly> 
+                                        <input type="text" style="color:initial !important" class="form-control input2" placeholder="End Date" readonly> </div>
+                                </div>
     
+
+                            </div>
+
                         </div>
                         <div class="flexAl">
                             <div class="boxx greenbg" >Search Satellite</div>
@@ -566,9 +577,17 @@
 
                                 <input  class='faint boxx' type="number" placeholder='Show' />
 
-                                <input class='faint boxx' type="text" placeholder='Filter by Day' />
+                                <div class="date filter">
 
-
+                                    <div class=" ">
+                                        <div class="input-group input-daterange"> 
+                                            <input type="text" style="color:initial !important"  class="form-control input1" placeholder="Filter by day" readonly> 
+                                        </div>
+                                    </div>
+        
+    
+                                </div>
+    
 
                             </div>
 
@@ -657,6 +676,18 @@
         }
     }) 
 
+
+
 </script>
 
+<!-- <script>
+    $(function() {   
+    $('.daterange').daterangepicker();
+    });
+</script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+<script src="./js/query.js" ></script>
 </html>

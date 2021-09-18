@@ -6,8 +6,12 @@
 }
 
 a, a:hover, a:active {
-  color: unset;
-  text-decoration: unset;
+  color: unset !important;
+  text-decoration: unset !important;
+}
+
+.datepicker td.day{
+  padding:0.5em
 }
 
 input[type=text] {
@@ -350,6 +354,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 900px) {
   .anchor_stats_top {
     padding: 2em 2.2em;
+  }
+  .last-table th{
+    text-align: center;
   }
 }
 
