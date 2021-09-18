@@ -52,6 +52,7 @@
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+  min-width: 99%;
 }
 .tabswitch .tabs .tab-body > div.active {
   top: 0px;

@@ -6,7 +6,7 @@
 }
 
 a, a:hover, a:active {
-  color: unset !important;
+  color: unset;
   text-decoration: unset !important;
 }
 
@@ -150,6 +150,10 @@ body {
 .greenbg {
   background: var(--primary);
   color: #fff;
+}
+
+.greenC{
+  color:#298E3E !important;
 }
 
 .hashbg {
