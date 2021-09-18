@@ -1,0 +1,25 @@
+
+:root{
+    --hash:#F7F7F7;
+    --primary:#298E3E;
+}
+
+
+.dashboard{
+    min-width: 100vw;
+    background: #E5E5E5;
+
+
+
+    .datebox{
+        background: var(--hash);  
+    }
+
+}
+
+
+.boxx{
+
+    padding: 0.6em 0.8em;
+    border-radius: 3px; 
+}

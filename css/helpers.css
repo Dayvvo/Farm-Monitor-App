@@ -1,0 +1,583 @@
+.hidden {
+  visibility: hidden;
+}
+
+.none {
+  display: none;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: unset;
+}
+
+.flexgrow {
+  display: flex;
+  flex-direction: column;
+}
+.flexgrow .grow {
+  flex-grow: 1;
+}
+
+.flexC {
+  display: flex;
+  justify-content: center;
+}
+
+.inflex {
+  display: inline-flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.mLeftAuto {
+  margin-left: auto;
+}
+
+.flexAl {
+  display: flex;
+  align-items: center;
+}
+
+.flexBtw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexBtwDesk {
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .flexBtwDesk {
+    display: flex;
+  }
+}
+
+.alignCols {
+  display: flex;
+  flex-direction: column;
+}
+.alignCols .middle {
+  margin: auto 0;
+}
+
+.rflexBtw {
+  display: grid;
+  grid-row-gap: 1em;
+}
+@media (min-width: 700px) {
+  .rflexBtw {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alignEnd {
+  display: flex;
+  align-items: flex-end;
+}
+
+.fullFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doubleflex {
+  display: flex;
+}
+.doubleflex > div:nth-child(1) {
+  margin-right: 1em;
+}
+
+.smallflex {
+  display: flex;
+}
+.smallflex > *:nth-child(1) {
+  margin-right: 0.5em;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.smallwm {
+  margin: 1em;
+}
+
+.section {
+  margin-top: 2em;
+}
+
+.sectM {
+  margin-top: 2.5em;
+}
+
+.smallM {
+  margin-top: 0.5em;
+}
+
+.smallLM {
+  margin-left: 0.3em;
+}
+
+.tinyM {
+  margin-top: 0.3em;
+}
+
+.middleM {
+  margin-top: 1.5em;
+}
+
+.nestM {
+  margin-top: 1em;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.smallPad {
+  padding: 0.5em;
+}
+
+.padBlock {
+  padding-block: 1em;
+}
+
+.padInline {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.padInMid {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.paddBoth {
+  padding: 1em;
+}
+
+.sectPad {
+  padding: 2em;
+}
+
+.fullInnerDiv > div {
+  height: 100%;
+}
+.fullInnerDiv > div > div {
+  height: 100%;
+}
+
+.fullH {
+  height: 100%;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.fullW {
+  width: 100%;
+}
+
+.noOutline {
+  outline: none;
+}
+
+.paddBlock {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+button {
+  cursor: pointer;
+}
+
+.padsmallTop {
+  padding: 0.5em 1em;
+}
+@media (min-width: 700px) {
+  .padsmallTop {
+    padding: 0.7em 1.5em;
+  }
+}
+
+.padLong {
+  padding: 0.8em 1.5em;
+}
+@media (min-width: 500px) {
+  .padLong {
+    padding: 0.8em 2em;
+  }
+}
+@media (min-width: 700px) {
+  .padLong {
+    padding: 0.8em 2.5em;
+  }
+}
+@media (min-width: 900px) {
+  .padLong {
+    padding: 0.8em 3.5em;
+  }
+}
+
+.noborder {
+  border: none;
+}
+
+.padBlock2 {
+  padding-block: 2em;
+}
+
+.wytBg {
+  background: white;
+}
+
+.grid2 {
+  display: grid;
+  grid-row-gap: 1.5em;
+}
+@media (min-width: 700px) {
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5em;
+  }
+}
+.grid2 > div {
+  font-size: 16px;
+}
+
+.rGrid3 {
+  display: grid;
+}
+@media (min-width: 700px) {
+  .rGrid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid2.padd {
+  grid-column-gap: 2.5em;
+}
+
+.grid3 {
+  display: grid;
+  grid-row-gap: 1.5em;
+}
+@media (min-width: 800px) {
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .grid3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5em;
+  }
+}
+.grid3 > div {
+  font-size: 16px;
+}
+.grid3 .ui.input {
+  width: 100%;
+}
+
+.grid-4 {
+  display: grid;
+}
+@media (min-width: 800px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5em;
+  }
+}
+@media (min-width: 1000px) {
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.2em;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobileCenter {
+    text-align: center;
+  }
+}
+
+.grid4 {
+  display: grid;
+  grid-row-gap: 1.5em;
+}
+@media (min-width: 600px) {
+  .grid4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .grid4 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.grid4 > div {
+  font-size: 16px;
+}
+.grid4 .ui.input {
+  width: 100%;
+}
+
+.overflow {
+  display: grid;
+}
+@media (max-width: 800px) {
+  .overflow {
+    overflow-x: scroll;
+  }
+}
+
+.wyt {
+  color: #fff;
+}
+
+.relative {
+  position: relative;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: #e1f6f6;
+}
+.dashboard .radius {
+  border-radius: 10px;
+}
+.dashboard nav {
+  position: unset !important;
+  width: unset !important;
+}
+.dashboard .sidedash {
+  position: fixed;
+  top: 0;
+  left: -500px;
+}
+.dashboard .dashmain {
+  box-sizing: border-box;
+}
+@media (max-width: 400px) {
+  .dashboard .dashmain {
+    max-width: 95%;
+    margin: auto;
+  }
+}
+@media (max-width: 900px) {
+  .dashboard .dashmain {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+.dashboard .dashmain .grow {
+  min-height: 500px;
+}
+@media (min-width: 900px) {
+  .dashboard .sidedash {
+    position: fixed;
+    width: 16%;
+    left: 0;
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+  .dashboard .dashmain {
+    position: relative;
+    left: 16%;
+    width: 84%;
+  }
+}
+@media (min-width: 1100px) {
+  .dashboard .sidedash {
+    width: 15%;
+  }
+  .dashboard .dashmain {
+    position: relative;
+    left: 15%;
+    width: 85%;
+  }
+}
+.dashboard .dashicons > div {
+  margin-top: 1.5em;
+}
+.dashboard .dashicons > div a {
+  min-width: 126px;
+  display: inline-flex;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  border-bottom: 3px solid transparent;
+  color: #052938;
+  min-height: 60px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.dashboard .dashicons > div a > div {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+.dashboard .dashicons > div a img {
+  max-width: 20px;
+}
+.dashboard .dashicons > div a img.act {
+  display: unset;
+}
+.dashboard .dashicons > div a img.df {
+  display: none;
+}
+.dashboard .dashicons > div > a:hover {
+  background: #052938;
+  color: #fff;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+.dashboard .dashicons > div > a:hover img.act {
+  display: none;
+}
+.dashboard .dashicons > div > a:hover img.df {
+  display: unset;
+}
+.dashboard .dashicons > div > a.active {
+  background: #052938;
+  color: #fff;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+.dashboard .dashicons > div > a.active img.act {
+  display: none;
+}
+.dashboard .dashicons > div > a.active img.df {
+  display: unset;
+}
+.dashboard .dashicons > div:nth-child(1) {
+  margin-top: 0;
+}
+
+.ntfmsg {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 1em;
+}
+@media (min-width: 600px) {
+  .ntfmsg {
+    max-width: 80%;
+  }
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: white;
+  border-radius: 25px 25px 0px 0px;
+}
+.popup img {
+  max-height: 50px;
+}
+.popup > div:nth-child(1) {
+  box-shadow: 0px 0px 10px #08b1ae3b;
+  opacity: 1;
+}
+
+.name {
+  position: relative;
+  font-size: 14px;
+}
+.name .drop,
+.name .dropdown {
+  z-index: 300;
+  position: absolute;
+  top: 120%;
+  min-width: 230px;
+  width: auto;
+  max-width: 240px;
+  margin-left: -30px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06), 0px 4px 16px rgba(0, 0, 0, 0.09);
+  border-radius: 8px;
+}
+.name .drop a,
+.name .dropdown a {
+  font-size: 13px;
+  display: flex;
+  border-bottom: 0.5px solid #ccc3c3;
+  color: #333333;
+}
+.name .drop a img,
+.name .dropdown a img {
+  margin-right: 0.9em;
+}
+.name .dropdown {
+  top: 170%;
+  min-width: 125px;
+  margin-left: unset;
+}
+.name .dropdown > div {
+  padding: 0px;
+}
+.name .dropdown a {
+  border-bottom: unset;
+  padding-left: 0.3em 1px;
+}
+.name .drop:nth-child(2) img {
+  width: 19px;
+  height: 19px;
+}
+.name .last {
+  border-bottom: none !important;
+}
+
+.name:hover .drop,
+.name:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nodisplay {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .flexEndDesktop {
+    justify-content: flex-end;
+  }
+}
+
+/*# sourceMappingURL=helpers.css.map */
