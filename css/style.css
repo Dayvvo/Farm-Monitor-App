@@ -280,6 +280,21 @@ h1, h2, h3, h4, h5, h6 {
   .location_table .third {
     padding-left: 1.8em;
   }
+  .pageBtns{
+    display: flex;
+  }
+
+  .pageBtns >button{
+    margin-right: 1em;
+    
+  }
+  
+}
+
+.pageBtns{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-column-gap: 0.5em;
 }
 
 .statbox {
